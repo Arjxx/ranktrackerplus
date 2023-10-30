@@ -107,11 +107,13 @@
           </p>
 
           <div class="hero-image text-center">
-            <img src="img/hero.png" alt="" class="img-fluid h-image " />
+            <img src="img/hero.png" alt="" class="img-fluid h-image" />
           </div>
         </div>
       </div>
-      <!-- <div class="bg-color"></div> -->
+
+      <div class="gear" id="gearg"><img src="img/gear_g.png" alt="" /></div>
+      <div class="gear" id="gearw"><img src="img/grear_w.png" alt="" /></div>
     </div>
     <div class="container">
       <div class="card-float"></div>
@@ -126,5 +128,24 @@
     </div>
 
     <div class="cntainer-fluid footer"></div>
+
+    <script>
+    function scrollevent() {
+      var scrolling = window.scrollY;
+      var rotateG = scrolling * -0.05 ;
+      var rotateW = scrolling * 0.03 ;
+
+      console.log(scrolling);
+      var gearw = document.getElementById("gearw");
+      var gearg = document.getElementById("gearg");
+
+      // Use template literals with backticks and ${variable} syntax
+      gearg.style.transform = `rotate(${rotateG}deg)`;
+      gearw.style.transform = `rotate(${rotateW}deg)`;
+  }    
+
+
+window.addEventListener("scroll", scrollevent);
+    </script>
   </body>
 </html>
