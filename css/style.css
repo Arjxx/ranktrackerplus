@@ -96,12 +96,12 @@ li {
 }
 
 .button{
-  background-color: slateblue;
-  color: white;
+  background-color: slateblue !important;
+  color: white !important;
   transition: 0.3sec ease;
 }
 .button:hover{
-  background-color: rgb(78, 65, 161);
+  background-color: rgb(78, 65, 161) !important;
 }
 
 
