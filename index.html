@@ -4,10 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ranktrackerplus</title>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="css/style.css" />
+     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/jquery.js"></script>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> 
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -25,7 +52,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#"
                 >Home <span class="sr-only">(current)</span></a
@@ -58,6 +85,16 @@
               </div>
             </li>
           </ul>
+          <div class="login">
+            <a href="#">
+              <button type="button" class="btn btn-outline-secondary btn-sm">
+                Log in
+              </button></a
+            >
+            <a href="#">
+              <button type="button" class="btn button btn-sm">Sign Up</button>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -97,17 +134,42 @@
       <div class="container">
         <div class="herohead text-center pt-5">
           <h1 class="">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Dicta, adipisci!
+            Boost Your Google Rankings with <br />Rank Tracker plus
           </h1>
           <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-            consequuntur at voluptates quam sint a voluptatum cumque dolores
-            nisi harum?
+            Enhance your website's Google ranking with Rank Tracker plus. Enjoy
+            real-time tracking, analytics, and ease of use for all levels. Drive
+            your search engine success with data. Start now with Rank Tracker
+            plus.
           </p>
 
           <div class="hero-image text-center">
             <img src="img/hero.png" alt="" class="img-fluid h-image" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 quick-feature text-left mt-5 mb-md-5">
+            <span class="feat">Rank Tracking</span>
+
+            <p>
+              100% Accurate SERP Rankings Track your rank accurately from
+              anywhere, on any device.
+            </p>
+          </div>
+          <div class="col-md-4 quick-feature text-left mt-5 mb-md-5">
+            <span class="feat">Analysis</span>
+            <p>
+              View and Chart Your Online Data Make smart SEO decisions based on
+              clear visual insights.
+            </p>
+          </div>
+          <div class="col-md-4 quick-feature text-left mt-5 mb-md-5">
+            <span class="feat">Reporting</span>
+            <p>
+              Enhanced Reporting Features Easily auto-generate and send custom,
+              unbranded reports.
+            </p>
           </div>
         </div>
       </div>
@@ -116,36 +178,215 @@
       <div class="gear" id="gearw"><img src="img/grear_w.png" alt="" /></div>
     </div>
     <div class="container">
-      <div class="card-float"></div>
+      <div class="card-float p-4 p-md-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              Home
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#disabled-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="disabled-tab-pane"
+              aria-selected="false"
+              disabled
+            >
+              Disabled
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <h1 class="hf-card m-head">
+              Boost Your Google Rankings with Rank Tracker plus
+            </h1>
+            <p class="pf-card">
+              Elevate your website's visibility with our Google Rank Tracker
+              Tool. Designed for simplicity and effectiveness, Rank Tracker plus
+              offers real-time tracking and insightful analytics in a
+              user-friendly package. Ideal for businesses, SEO professionals,
+              and beginners alike, our tool helps you make data-driven decisions
+              to climb the search engine ranks. Start your journey to the top
+              with Rank Tracker plus.
+            </p>
+
+            <div class="row fi-card text-center">
+              <div class="col-md-4">
+                <div class="cd-float">
+                  <i class="bx bx-time-five"></i>
+                  <div class="text-left">
+                    <p>
+                      Instant updates on your website's Google ranking, enabling
+                      quick responses to SEO changes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="cd-float">
+                  <i class="bx bxs-analyse"></i>
+                  <p>
+                    Get detailed insights on keyword performance, competitor
+                    benchmarks, and trends to refine your SEO strategies.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="cd-float">
+                  <i class="bx bx-user-check"></i>
+                  <p>
+                    Intuitive and straightforward design, making rank tracking
+                    accessible for both experts and beginners.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="profile-tab-pane"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact-tab-pane"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+      <div
+        class="tab-pane fade"
+        id="disabled-tab-pane"
+        role="tabpanel"
+        aria-labelledby="disabled-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
     </div>
+
     <div class="container body-content pt-5">
       <div class="content">
         <h1 class="text-center">
           Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.
           Obcaecati?.
         </h1>
+
+        <div class="row ">
+          <div class="col-md-4">  <img src="img/hero.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-7 m-auto">
+            <h3>Google Ranks Checker</h3>
+            <p>Stay ahead in the SEO race with our cutting-edge Google Ranks Checker. It goes beyond mere rank tracking; it provides real-time updates, enabling you to see the immediate impact of your SEO efforts. Track your rankings for different keywords, understand SERP feature appearances, and even monitor the rankings of your competitors. With data this precise, strategizing for higher search engine visibility becomes intuitive and data-driven.</p>
+          </div>
+          
+          <div class="col-md-7 m-auto ">
+            <h3>Mobile Rank Tracker</h3>
+            <p> In a world where mobile searches dominate, our Mobile Rank Tracker ensures you’re not left behind. Get a comprehensive view of how your website performs in mobile search results. Track differences between desktop and mobile rankings, understand mobile user behavior, and optimize your content for the best mobile experience. Embrace the mobile-first approach and watch your SEO soar.</p>
+          </div><div class="col-md-4">  <img src="img/hero.png" class="img-fluid" alt="...">
+          </div>
+
+          <div class="col-md-4">  <img src="img/hero.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-7 m-auto">
+            <h3>Local SEO Rank Tracker</h3>
+            <p> Local businesses, rejoice! Our Local SEO Rank Tracker is tailored for businesses targeting local markets. Whether you’re a restaurant, a retail store, or a service provider, get precise data on how you rank in different localities. Adjust your strategy to dominate local search results, understand local search trends, and attract more foot traffic. This tool is your ally in mastering local SEO and connecting with your community.</p>
+          </div>
+
+          <div class="col-md-7 m-auto ">
+            <h3> Backlink Tracker </h3>
+            <p>  Backlinks are the backbone of SEO, and our Backlink Tracker is your guardian. Keep a vigilant eye on your backlink profile with our comprehensive tool. Track new and lost backlinks, analyze the quality and relevance of incoming links, and identify opportunities for acquiring high-quality backlinks. With actionable insights, maintaining a robust backlink profile has never been easier.</p>
+          </div><div class="col-md-4">  <img src="img/hero.png" class="img-fluid" alt="...">
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
       </div>
     </div>
 
     <div class="container-fluid footer"></div>
 
     <script>
-    function scrollevent() {
-      var scrolling = window.scrollY;
-      var rotateG = scrolling * -0.05 ;
-      var rotateW = scrolling * 0.02 ;
+      function scrollevent() {
+        var scrolling = window.scrollY;
+        var rotateG = scrolling * -0.05;
+        var rotateW = scrolling * 0.02;
 
-      //console.log(scrolling);
-      var gearw = document.getElementById("gearw");
-      var gearg = document.getElementById("gearg");
+        //console.log(scrolling);
+        var gearw = document.getElementById("gearw");
+        var gearg = document.getElementById("gearg");
 
-      // Use template literals with backticks and ${variable} syntax
-      gearg.style.transform = `rotate(${rotateG}deg)`;
-      gearw.style.transform = `rotate(${rotateW}deg)`;
-  }    
+        // Use template literals with backticks and ${variable} syntax
+        gearg.style.transform = `rotate(${rotateG}deg)`;
+        gearw.style.transform = `rotate(${rotateW}deg)`;
+      }
 
-
-window.addEventListener("scroll", scrollevent);
+      window.addEventListener("scroll", scrollevent);
     </script>
   </body>
 </html>

@@ -8,6 +8,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   line-height: 22px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -93,6 +95,26 @@ li {
   padding: 55px 0 75px 0;
 }
 
+.button{
+  background-color: slateblue;
+  color: white;
+  transition: 0.3sec ease;
+}
+.button:hover{
+  background-color: rgb(78, 65, 161);
+}
+
+
+.m-head{
+color: rgb(63, 54, 122);
+margin-bottom: 10px;
+}
+
+.feat {
+  color: rgb(245, 211, 101);
+  font-weight: 600;
+  font-size: 1rem;
+}
 /* +++++++++++++ HOME ++++++++++++++++++ */
 .navbar {
   background-color: #0c0c0c;
@@ -132,7 +154,7 @@ li {
 /* +++++++++++++ Hero +++++++++++++  */
 
 .hero {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 50px;
 }
 
@@ -141,7 +163,7 @@ li {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 135vh;
+  height: 120vh;
   background-color: slateblue;
   z-index: -2;
 }
@@ -153,10 +175,18 @@ li {
 
 .card-float {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   background-color: #fff;
   box-shadow: 0px -1px 28px -9px #636262;
   border-radius: 50px;
+}
+.cd-float {
+  
+  background-color: #fff;
+  box-shadow: 0px -1px 28px -9px #636262;
+  border-radius: 20px;
+  padding: 30px;
+  min-height: 250px;
 }
 
 .body-content {
@@ -179,6 +209,8 @@ li {
   top: 600px;
   width: 300px;
   transition: transform 0.5s ease;
+  z-index: -1;
+
   }
   #gearw{
     position :absolute;
@@ -191,6 +223,17 @@ li {
     
 .gear{
   opacity: 0.05;
+}
+
+.quick-feature{
+  min-height: 50px;
+  border-left: solid white;
+  color: #fff;
+}
+
+.fi-card i {
+  font-size: 5rem;
+  color: slateblue;
 }
 /*++++++++++ Footer ++++++++++++++++ */
 
