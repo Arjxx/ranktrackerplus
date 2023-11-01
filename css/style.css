@@ -235,9 +235,59 @@ margin-bottom: 10px;
   font-size: 5rem;
   color: slateblue;
 }
+
+.color-band{
+  min-height: 30vh;
+  background-color: rgb(241, 240, 245);
+  margin-top: 150px;
+}
+
+
+.fixed-image1{
+  background-image: url(/img/support-experience-hero-2880x1384.jpg.jpg);
+  background-size:cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: 0 -120;
+  height: 120px;
+  background-repeat: no-repeat;
+}
+.fixed-image2{
+  background-image: url(/img/support-experience-hero-2880x1384.jpg.jpg);
+  background-size:cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  /* background-position: 0 -150; */
+  height: 120px;
+  background-repeat: no-repeat;
+}
+
 /*++++++++++ Footer ++++++++++++++++ */
 
 .footer {
   min-height: 20vh;
   background-color: #252424;
+}
+.up-btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: slateblue;
+  right: 50px;
+  bottom:100px;
+  opacity: 0;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: 0.4s ease;
+  border-radius: 10px;
+
+}
+
+.up-btn a {
+  color: rgb(235, 185, 92);
+  text-decoration: none;
+}
+.up-btn.down{
+  opacity:1;
 }
