@@ -244,7 +244,7 @@ margin-bottom: 10px;
 
 
 .fixed-image1{
-  background-image: url(/img/support-experience-hero-2880x1384.jpg.jpg);
+  background-image: url(/img/fxbg.jpg);
   background-size:cover;
   object-fit: cover;
   background-attachment: fixed;
@@ -252,9 +252,8 @@ margin-bottom: 10px;
   height: 120px;
   background-repeat: no-repeat;
 }
-.fixed-image2{
-  background-image: url(/img/support-experience-hero-2880x1384.jpg.jpg);
-  background-size:cover;
+.fixed-image2{  
+  background-image: url(/img/fxbg.jpg);  background-size:cover;
   object-fit: cover;
   background-attachment: fixed;
   /* background-position: 0 -150; */
